@@ -1,0 +1,55 @@
+* {
+       box-sizing: border-box;
+   }
+   body {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+
+   .grid-container {
+       display: grid;
+       grid-template-columns: 150px 150px 150px;
+   }
+
+   .grid-item {
+       width: 150px;
+       height: 150px;
+   }
+
+   button {
+       font-size: 32px;
+       border-radius: 0;
+       padding: 0;
+       margin: 0;
+   }
+
+   button:hover:enabled {
+       background-color: lightgray;
+       cursor: pointer;
+   }
+
+   .b1, .b2, .b3 {
+       border-top: 0;
+   }
+
+   .b1, .b4, .b7 {
+       border-left: 0;
+   }
+
+   .b3, .b6, .b9 {
+       border-right: 0;
+   }
+
+   .b7, .b8, .b9 {
+       border-bottom: 0;
+   }
+
+   .player1 {
+       background-color: #AA96DA;
+   }
+
+   .player2 {
+       background-color: #FFFFD2;
+   }
